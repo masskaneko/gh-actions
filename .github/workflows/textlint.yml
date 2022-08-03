@@ -26,7 +26,7 @@ jobs:
         node-version: 16
 
     - name: Install Textlint
-      run: npm install -g textlint
+      run: npm install -g textlint textlint-rule-preset-ja-technical-writing
 
     - name: Run TextLint
-      run: textlint "**/*.md"
+      run: textlint -c .textlintrc "**/*.md"
