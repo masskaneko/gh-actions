@@ -2,9 +2,12 @@ name: TextLint
 
 on:
   push:
+    branches: [ "main" ]
     paths:
       - "**/*.md"
+      - ".github/workflows/textlint.yml"
   pull_request:
+    branches: [ "main" ]
     paths:
       - "**/*.md"
 
